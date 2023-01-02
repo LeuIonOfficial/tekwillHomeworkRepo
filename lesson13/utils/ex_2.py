@@ -16,8 +16,18 @@ list_of_destination = {
     "Chisinau": 300 
 }
 
+new_list_of_destination = {}
+
 while True:
-    a = int(input("1, 2, 3 or 4: "))
+    
+    print("""
+    1 - to check the price, 
+    2 - to add new destination, 
+    3 - to change the price
+    4 - to exit 
+    """)
+
+    a = int(input("Make your chose: "))
     if a == 1:
         city = input("Type your destination: ")
         print(plane_ride_cost(city))
@@ -31,6 +41,7 @@ while True:
         price = int(input("New price: "))
         print(add_new_destination(city, price))
     else:
+        list_of_destination.update(new_list_of_destination)
         break
 
     

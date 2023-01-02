@@ -1,18 +1,17 @@
+def check_int(number):
+    try:
+        return int(x)
+    except ValueError:
+        return None
+
+
+def check_float(number):
+    try:
+        return float(x)
+    except ValueError:
+        return None
+
 x = input('Anything: ')
 
-try:
-    type_of_x = int(x)
-except ValueError:
-    print(f"{x} cant be integer")
-else:
-    print(f"{x} can be an integer")
-
-try:
-    type_of_x = float(x)
-except ValueError:
-    print(f"{x} cant be float")
-else: 
-    print(f"{x} can be a float")
-
-finally:
-    print(f"{x} can be a string")
+print(check_int(x))
+    
