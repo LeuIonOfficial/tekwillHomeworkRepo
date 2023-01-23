@@ -30,7 +30,7 @@ def options_dict():
     return opt_dict
 
 
-def menu_tool(menu_text, stop_word):
+def menu_tool(menu_text, stop_word, options_dict):
     while True:
         print(menu_text)
         option = input(f'Select option or type {stop_word}:')
@@ -47,4 +47,4 @@ def menu_tool(menu_text, stop_word):
             print('Invalid option', str(ex))
 
 
-menu_tool(menu_text=menu_text(), stop_word='stop')
+menu_tool(menu_text=menu_text(), stop_word='stop', options_dict=options_dict())
