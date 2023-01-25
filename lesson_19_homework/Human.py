@@ -25,3 +25,4 @@ class Human:
 
 me = Human("Ion", "Leu", "2001/05/09")
 print(f"{me.get_full_name()}, age {me.get_human_age()}")
+
